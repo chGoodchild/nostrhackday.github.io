@@ -1,1 +1,1 @@
-# ecashhackday.github.io
+# nostrhackday.github.io
