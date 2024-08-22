@@ -2,141 +2,134 @@ body {
 	background-color: #000;
 	background-image: url("background.gif");
 	background-size: cover;
+	background-position: center; /* Centers the background image */
 	background-attachment: fixed;
 	padding-bottom: 250px;
 }
 
 /* fonts */
 
-@font-face{
-font-family: 'abcgravity';
-src: url('./ABCGravity-Expanded-Trial.otf') format('truetype');
-font-weight: normal;
-font-style: normal;
+@font-face {
+	font-family: 'abcgravity';
+	src: url('./ABCGravity-Expanded-Trial.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
-@font-face{
-font-family: 'abcgravity-condensed';
-src: url('./ABCGravity-ExtraCondensed-Trial.otf') format('truetype');
-font-weight: normal;
-font-style: normal;
+@font-face {
+	font-family: 'abcgravity-condensed';
+	src: url('./ABCGravity-ExtraCondensed-Trial.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
-@font-face{
-font-family: 'electra';
-src: url('./ElectraLTStd-Display.otf') format('truetype');
-font-weight: normal;
-font-style: normal;
+@font-face {
+	font-family: 'electra';
+	src: url('./ElectraLTStd-Display.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
-@font-face{
-font-family: 'gravity';
-src: url('./ABCGravity-Expanded-Trial.otf') format('opentype');
-font-weight: normal;
-font-style: normal;
+@font-face {
+	font-family: 'gravity';
+	src: url('./ABCGravity-Expanded-Trial.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
-@font-face{
-font-family: 'electra';
-src: url('./ElectraLTStd-Display.otf') format('opentype');
-font-weight: normal;
-font-style: normal;
+@font-face {
+	font-family: 'electra';
+	src: url('./ElectraLTStd-Display.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 h1 {
-	color: #fff;
+	color: #FFFFFF;
 	font-family: "gravity";
 	font-size: 15vw;
-	color: #FFFFFF;
 	line-height: 0.75;
 	margin-bottom: 15px;
 }
+
 h1.nostr {
-	color: #fff;
+	color: #FFFFFF;
 	font-family: "electra";
 	font-size: 15vw;
-	color: #FFFFFF;
 	margin: 0px;
 	padding: 0px;
 }
+
 h1.hackday {
-	color: #fff;
+	color: #FFFFFF;
 	font-family: "electra";
 	font-size: 15vw;
-	color: #FFFFFF;
-	margin-bottom: px;
+	margin-bottom: 0px; /* Corrected 'px' error */
 	margin-top: 0px;
 }
 
 h1.location {
-	color: #fff;
+	color: #FFFFFF;
 	font-family: "gravity";
 	font-size: 12vw;
-	color: #FFFFFF;
 	margin-bottom: 50px;
-	margin-top:  0px;
+	margin-top: 0px;
 }
 
 h1.date {
-	color: #fff;
+	color: #FFFFFF;
 	font-family: "electra";
 	font-size: 8vw;
-	color: #FFFFFF;
 	margin-bottom: 15px;
-	margin-top:  0px;
+	margin-top: 0px;
 }
 
 h1.time {
-	color: #fff;
+	color: #FFFFFF;
 	font-family: "electra";
 	font-size: 4vw;
-	color: #FFFFFF;
 	margin-bottom: 15px;
-	margin-top:  0px;
+	margin-top: 0px;
 }
 
 h2 {
 	color: #000;
 	margin: 0;
 	font-family: "redaction";
-
 }
 
 span.thick {
-	color: #fff;
+	color: #FFFFFF;
 	font-family: "gravity";
 	font-size: 6vw;
-	color: #FFFFFF;
 	margin-bottom: 50px;
-	margin-top:  0px;
+	margin-top: 0px;
 }
+
 span.thin {
-	color: #fff;
+	color: #FFFFFF;
 	font-family: "electra";
 	font-size: 6vw;
-	color: #FFFFFF;
 	margin-bottom: 15px;
-	margin-top:  0px;
+	margin-top: 0px;
 }
 
 span.sign {
-	color: #fff;
+	color: #FFFFFF;
 	font-family: "gravity";
 	font-size: 6vw;
-	color: #FFFFFF;
 	margin-bottom: 50px;
 	line-height: 0.75;
-	margin-top:  0px;
+	margin-top: 0px;
 	padding-top: 2px;
 }
 
 span.signthin {
-	color: #fff;
+	color: #FFFFFF;
 	font-family: "electra";
 	font-size: 6vw;
-	color: #FFFFFF;
 	margin-bottom: 15px;
-	margin-top:  0px;
+	margin-top: 0px;
 }
 
 /* boxes */
@@ -209,33 +202,12 @@ span.signthin {
 		max-width: 75% !important;
 	}
 
-    h1.nostr {
-        font-size: 18vw;  /* Adjusted from 12vw */
+    h1.nostr, h1.hackday, h1.location {
+        font-size: 18vw;
     }
 
-    h1.hackday {
-        font-size: 18vw;  /* Adjusted from 12vw */
+    span.thick, span.thin, span.sign, span.signthin {
+        font-size: 9vw;
     }
-
-    h1.location {
-        font-size: 12vw;   /* Adjusted from 8vw */
-    }
-
-    span.thick {
-        font-size: 10vw;   /* Adjusted from 4vw */
-    }
-
-    span.thin {
-        font-size: 9vw;   /* Adjusted from 4vw */
-    }
-
-    span.sign {
-        font-size: 9vw;   /* Adjusted from 4vw */
-    }
-	
-    span.signthin {
-        font-size: 9vw;   /* Adjusted from 4vw */
-    }
-    /* ... your other mobile-specific styles ... */
 }
 
